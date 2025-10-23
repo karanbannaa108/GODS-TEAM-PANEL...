@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>GODS TEAM PANEL</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <main class="container" role="main">
+    <h1>GODS TEAM PANEL</h1>
+
+    <section id="paymentSection" class="card" aria-label="Payment QR">
+      <img id="qrImage" src="phonepe_qr.png" alt="PhonePe QR" class="qr">
+      <div class="note">Scan & Pay using PhonePe / UPI</div>
+      <div class="upi">UPI ID: <strong>shekhawat0566@ibl</strong></div>
+      <div class="actions">
+        <button id="paidBtn" class="btn">I PAID</button>
+      </div>
+      <div id="sessionId" class="session-id hidden" aria-hidden="true"></div>
+      <div id="waiting" class="hint hidden">Waiting for manual confirmation...</div>
+    </section>
+
+    <section id="loginSection" class="card hidden" aria-hidden="true">
+      <h2>Login (automatic)</h2>
+      <p class="sub">Payment manually confirmed — tap to access panel</p>
+      <div class="actions"><button id="accessBtn" class="btn">Access Panel</button></div>
+    </section>
+
+    <section id="finalSection" class="card hidden" aria-hidden="true">
+      <h2>Access Granted</h2>
+      <p class="whats">WhatsApp: <a href="https://wa.me/917878622242" target="_blank">+91 78786 22242</a></p>
+      <button id="restartBtn" class="btn secondary">Restart</button>
+    </section>
+
+    <footer class="foot">© GODS TEAM PANEL</footer>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
